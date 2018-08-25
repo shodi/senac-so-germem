@@ -14,7 +14,7 @@ typedef struct Pessoa {
     double altura;
 } Pessoa_t;
 
-void* memalloc(uint8_t size) {
+void* memalloc(size_t size) {
     register unsigned int i = 0;
     while(i < MEMORY_SIZE) {
         if (memory[i] == 0) {
